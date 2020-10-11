@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %}
+{% load markdown_filter %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block body %}
+    <div>    
+        {{ entry | markdownify | safe }}
+    </div>
+    <br>
+    <a href="/edit_entry/{{ title }}">Edit</a>
+{% endblock %}

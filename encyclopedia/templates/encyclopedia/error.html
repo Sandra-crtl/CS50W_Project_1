@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Error
+{% endblock %}
+
+{% block body%}
+    <h1>ERROR</h1>
+
+    {% if error == 1 %}
+        There already exists a wiki entry for: {{ title }}.
+    {% elif error == 0 %}
+        Currently, there doesn't exist any encyclopedia entry for: {{ title }}.
+    {% endif %}
+{% endblock %}
