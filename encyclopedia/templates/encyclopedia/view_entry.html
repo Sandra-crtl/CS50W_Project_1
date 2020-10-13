@@ -10,5 +10,5 @@
         {{ entry | markdownify | safe }}
     </div>
     <br>
-    <a href="/edit_entry/{{ title }}">Edit</a>
+    <a href="{% url 'edit_entry' title %}">Edit</a>
 {% endblock %}

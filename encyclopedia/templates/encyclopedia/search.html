@@ -12,7 +12,7 @@
     {% else %}
         <ul>
             {% for entry in results %}
-                <li><a href="/wiki/{{ entry }}">{{ entry }}</a></li> 
+                <li><a href="{% url 'view_entry' entry %}">{{ entry }}</a></li> 
             {% endfor %}
         </ul>
     {% endif %}
