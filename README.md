@@ -10,6 +10,6 @@ Part of the [CS50 Web Programming with Python and JavaScript](https://cs50.harva
 To install Django, please refer to [Django on GitHub](https://github.com/django/django/blob/main/docs/topics/install.txt).
 
 ```bash
-cd [web app folder on you local computer]
+cd [web app folder on your local machine]
 python manage.py runserver
 ```
